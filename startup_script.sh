@@ -2,6 +2,7 @@ apt-get -y update
 apt-get -y install git
 apt-get -y install virtualenv
 git clone https://github.com/mukeshkhattar/bcra
+cd bcra
 virtualenv venv -p python3
 source venv/bin/activate
 pip install -r requirements.txt
