@@ -166,22 +166,10 @@ This is needed so that backend service id is picked up by startup script
 
 ## Enable IAP
 1. Create a firewall rule to allow traffic from IAP  IP ranges on tcp:80 on all instnaces in network-a
-2. create oauth-brand. The email address needs to be a GSuite identity/group and the person running the command must be owner of the group
-```
-gcloud alpha iap oauth-brands create --application_title=gcp-web-app --support_email=mukeshkhattar@google.com
-```
-
-output
-```
-applicationTitle: gcp-web-app
-name: projects/879485753866/brands/879485753866
-orgInternalOnly: true
-supportEmail: mukeshkhattar@google.com
-```
-
+2. create oauth consent screen
 3. Enable IAP through cloud console
 
-/projects/879485753866/global/backendServices/7800251586328008522
+
 
 ## Running Tests
 login with app-users - access denined
