@@ -36,7 +36,7 @@ def root():
     if error_str:
         return 'Error: {}'.format(error_str)
     else:
-        return 'Hi, {}. I am {}.'.format(user_email, platform.node())
+        return 'Hi, {}. This is app2. This node is : {}.'.format(user_email, platform.node())
 
 
 if __name__ == '__main__':
